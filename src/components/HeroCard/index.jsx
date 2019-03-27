@@ -1,6 +1,7 @@
 import React from 'react'
 import {Avatar, Collapse} from 'antd'
-import {Wrapper, TableHeader} from './styled'
+import {Wrapper} from './styled'
+import Herotable from '../HeroTable'
 
 const HeroCard = ({hero, children}) => {
     return (
@@ -14,22 +15,7 @@ const HeroCard = ({hero, children}) => {
                     </Wrapper>
                 }
             >
-                <table>
-                    <tbody>
-                    <tr>
-                        <TableHeader>Intelligence</TableHeader>
-                        <td>{hero.intelligence}</td>
-                    </tr>
-                    <tr>
-                        <TableHeader>Strength</TableHeader>
-                        <td>{hero.strength}</td>
-                    </tr>
-                    <tr>
-                        <TableHeader>Speed</TableHeader>
-                        <td>{hero.speed}</td>
-                    </tr>
-                    </tbody>
-                </table>
+                <Herotable hero={hero}/>
             </Collapse.Panel>
         </Collapse>
     )

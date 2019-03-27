@@ -2,6 +2,7 @@ import React from 'react'
 import HeroesList from '../HeroesList'
 import {ColumnsWrapper, Column, ColumnTitle} from "./styled"
 import  SelectedHeroesList from '../SelectedHeroesList'
+import SelectedHeroesTotals from '../SelectedHeroesTotals'
 
 
 const App = () => {
@@ -14,6 +15,10 @@ const App = () => {
             <Column>
                 <ColumnTitle>Selected Heroes</ColumnTitle>
                 <SelectedHeroesList />
+            </Column>
+            <Column>
+                <ColumnTitle>Team Totals</ColumnTitle>
+                <SelectedHeroesTotals />
             </Column>
         </ColumnsWrapper>
     )

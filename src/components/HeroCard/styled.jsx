@@ -7,7 +7,3 @@ export const Wrapper = styled.div`
     justify-content: space-between;
     align-items: center;
 `
-
-export const TableHeader = styled.th`
-    padding-right: 15px;
-`
